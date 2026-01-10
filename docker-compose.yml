@@ -1,0 +1,18 @@
+services:
+  claude-bot:
+    build: .
+    container_name: nextcloud-claude-bot
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8085:8085"
+    environment:
+      - NEXTCLOUD_URL=${NEXTCLOUD_URL}
+      - ERPNEXT_URL=${ERPNEXT_URL}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - INSTALL_DIR=/app/data
+      - BOTS_CONFIG_FILE=/app/data/bots_config.json
+    volumes:
+      # Bot data and configuration
+      - ./data:/app/data
+      # Optional: Mount workspace directories
+      # - /path/to/workspace:/workspace:ro

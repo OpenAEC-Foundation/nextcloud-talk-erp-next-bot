@@ -1,0 +1,37 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Conversation history
+conversation_history.json
+key_facts.json
+
+# User config directories (contain API keys)
+config/
+data/
+
+# Bot config with secrets
+bots_config.json
+
+# Playwright cache
+.playwright/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,22 @@
+{
+    "user1": {
+        "secret": "your-bot-secret-from-nextcloud-talk-settings",
+        "working_dir": "/home/user1",
+        "config_dir": "/opt/nextcloud-claude-bot/config/user1",
+        "erpnext_api_key": "your-erpnext-api-key",
+        "erpnext_api_secret": "your-erpnext-api-secret",
+        "erpnext_user": "user1@example.com",
+        "nextcloud_user": "user1",
+        "nextcloud_password": "your-nextcloud-app-password"
+    },
+    "user2": {
+        "secret": "another-bot-secret-from-nextcloud-talk-settings",
+        "working_dir": "/home/user2",
+        "config_dir": "/opt/nextcloud-claude-bot/config/user2",
+        "erpnext_api_key": "another-erpnext-api-key",
+        "erpnext_api_secret": "another-erpnext-api-secret",
+        "erpnext_user": "user2@example.com",
+        "nextcloud_user": "user2",
+        "nextcloud_password": "another-nextcloud-app-password"
+    }
+}
